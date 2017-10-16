@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function click() {
+      window.getElementById("1").src="1.a\index.html"
+      window.getElementById("2").src="2.a\index.html"
+      window.getElementById("3").src="2.a\index.html"
+      window.getElementById("4").src="1.a\index.html"
+    }
+    function keys() {
+      window.getElementById("1").src="1.b\index.html"
+      window.getElementById("2").src="2.b\index.html"
+      window.getElementById("3").src="2.b\index.html"
+      window.getElementById("4").src="1.b\index.html"
+    }
+  </script>
+</head>
+
+<body onclick="click()" onkeyup="keys()">
+
+  <iframe id="1" frameBorder="0" src="1\index.html" style="position:absolute;width:250px;height:250px;top:0px;left:0px;">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+
+  <iframe id="2" frameBorder="0" src="2\index.html" style="position:absolute;width:250px;height:250px;top:0px;left:250px;">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+
+  <iframe id="3" frameBorder="0" src="2\index.html" style="position:absolute;width:250px;height:250px;top:250px;left:0px;">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+
+  <iframe id="4" frameBorder="0" src="1\index.html" style="position:absolute;width:250px;height:250px;top:250px;left:250px;">
+    <p>Your browser does not support iframes.</p>
+  </iframe>
+
+</body>
+</html>
